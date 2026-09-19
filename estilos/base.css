@@ -96,6 +96,15 @@ h1{
     margin-bottom: 10px;
 }
 
+.card-conteudo img {
+    float: right;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border: 3px solid var(--cor-primaria);
+}
 .card-conteudo a {
     color: var(--link-cor);
     text-decoration: none;
@@ -121,3 +130,4 @@ footer p {
     color: var(--destaque);
     font-size: 0.9rem;
 }
+
