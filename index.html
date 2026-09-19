@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Fundamentos da Web Dinâmica - Rafael Schmaiske de Morais - Conteúdo da disciplina de desenvolvimento de software">
+    <meta name="author" content="Rafael Schmaiske de Morais">
+    <title>WDD 131 - Fundamentos da Web Dinâmica - Rafael Schmaiske de Morais</title>
+    <link rel="stylesheet" href="estilos/base.css">
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
-    <h1>Rafael Morais</h1>
-    <p>Software Developer</p>
+    <header>
+        <span id="titulo-curso">WDD131 - Fundamentos da Web Dinâmica</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/rafaelschmaiskedemorais/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=por" target="_blank">Escrituras</a>
+            <a href="#" target="_blank">Projeto Final</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Rafael Schmaiske de Morais</h1>
+
+        <div class="content-grid">
+            <section class="card">
+                <h2>Sobre Mim</h2>
+                <div class="card-conteudo">
+                    <p>Sempre fui fascinado por tecnologia e inovação prática. Minha paixão é engenharia por trás das coisas: visualizar processos e estruturas sistemas mentalmente, com lógicas de validação e soluções para problemas reais, como o sistema que desenvolvi o sistema de caravanas. </p>
+                    <p>Com bagagem em eletrônica, manutenção de equipamentos e projetos práticos, consigo combinar essa visão com a constante evolução no desenvolvimento web para transformar ideias em soluções funcionais.</p>
+                </div>
+            </section>
+        
+        
+            <section class="card">
+                <h2>Recursos Web Dev</h2>
+                <div class="card-conteudo">
+                    <ul>
+                        <li><a href="https://dev.to" target="_blank">Comunidade Dev.to</a></li>
+                        <li><a href="https://www.smashingmagazine.com" target="_blank">Revista Smashing</a></li>
+                        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="anoatual"></span> Rafael Schmaiske de Morais - Pr - Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
 </body>
 </html>

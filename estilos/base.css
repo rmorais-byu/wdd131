@@ -1,0 +1,123 @@
+:root {
+    --cor-primaria: #1e4d72; /* Azul escuro*/
+    --nav-bg-cor: #333333; /* Cinza escuro para navegação*/
+    --texto-principal: #000000; /* Cor padrão para texto*/
+    --texto-claro: #ffffff; /* Texto claro */
+    --destaque: #f1c40f; /* Cor Amarela para destacar */
+    --borda-cartoes: #7f8c8d; /* Cor da borda dos cartões */
+    --link-cor: #0056b3; /*Cor para os Links */
+    --arredondamento-cartoes: 8px; /* Arredondamento */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--texto-claro);
+    color: var(--texto-principal);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--texto-claro);
+    text-align: center;
+}
+
+#titulo-curso {
+    display: block;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav{
+    background-color: var(--nav-bg-cor);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 0;
+}
+
+nav a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--destaque);
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1{
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 30px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    border: 1px solid var(--borda-cartoes);
+    border-radius: var(--arredondamento-cartoes);
+    padding: 20px;
+    background-color: var(--texto-claro);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+    font-size: 1.3rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.card-conteudo p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card-conteudo ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.card-conteudo li {
+    margin-bottom: 10px;
+}
+
+.card-conteudo a {
+    color: var(--link-cor);
+    text-decoration: none;
+}
+
+.card-conteudo a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--cor-primaria);
+    color: var(--texto-claro);
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+#ultimaModificacao {
+    color: var(--destaque);
+    font-size: 0.9rem;
+}
