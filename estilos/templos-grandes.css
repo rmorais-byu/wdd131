@@ -1,3 +1,5 @@
+@media screen and (min-width: 768px) {
+
 header {
     justify-content: space-between;
 }
@@ -7,7 +9,7 @@ header {
 }
 
 nav {
-    display: block;
+    display: flex;
     position: static;
     background-color: transparent;
     width: auto;
@@ -23,4 +25,6 @@ nav {
 
 .res-grid {
     grid-template-columns: repeat(3, 1fr);
+}
+
 }
