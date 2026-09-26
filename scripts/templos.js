@@ -1,15 +1,18 @@
-const currentYearSpan = document.querySelector("#currentyear");
-const UltimaModificacaoSpan = document.querySelector("#UltimaModificacao");
-
-const today = new Date();
-currentYearSpan.textContent = today.getFullYear();
-UltimaModificacaoSpan.textContent = document.UltimaModificacao;
+const anoAtualSpan = document.querySelector("#anoAtual");
+if (anoAtualSpan) {
+    anoAtualSpan.textContent = new Date().getFullYear();
+}
+const ultimaModificacaoSpan = document.querySelector("#UltimaModificacao");
+if (ultimaModificacaoSpan){
+    ultimaModificacaoSpan.textContent = document.lastModified;
+}
 
 const hamburguerElement = document.querySelector('#menu');
 const navElement = document.querySelector('.navigation');
 
-hamburguerElement.addEventListener('click', ()=>{
-    navElement.classList.toggle('open');
-    hamburguerElement.classList.toggle('open');
+if (hamburguerElement && navElement){
+    hamburguerElement.addEventListener('click', ()=>{
+        navElement.classList.toggle('open');
+        hamburguerElement.classList.toggle('open');
 });
-
+}
