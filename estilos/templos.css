@@ -83,7 +83,7 @@ main h2 {
 }
 
 .res-grid {
-    display: white;
+    display: grid;
     margin: 0;
     padding: 0.5rem;
     border-radius: 8px;
