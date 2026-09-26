@@ -1,0 +1,26 @@
+header {
+    justify-content: space-between;
+}
+
+#menu {
+    display: none;
+}
+
+nav {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: auto;
+}
+
+.navigation {
+    flex-direction: row;
+}
+
+.navigation li a {
+    padding: 0.5rem 1rem;
+}
+
+.res-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
